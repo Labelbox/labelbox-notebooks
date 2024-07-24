@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/python-package-shared-setup
+      - uses: ./.github/actions
         with:
           python-version: 3.12
       - name: Create readme
