@@ -6,15 +6,13 @@
 #   features: []
 #   all-features: false
 #   with-sources: false
+#   generate-hashes: false
+#   universal: false
 
 annotated-types==0.7.0
     # via pydantic
-appnope==0.1.4
-    # via ipython
 asttokens==2.4.1
     # via stack-data
-backcall==0.2.0
-    # via ipython
 black==24.4.2
 click==8.1.7
     # via black
@@ -32,7 +30,7 @@ gitpython==3.1.43
     # via databooks
 importlib-metadata==8.2.0
     # via yapf
-ipython==8.12.3
+ipython==8.26.0
     # via black
 jedi==0.19.1
     # via ipython
@@ -40,18 +38,16 @@ matplotlib-inline==0.1.7
     # via ipython
 mypy-extensions==1.0.0
     # via black
-numpy==1.24.4
+numpy==2.0.1
     # via pandas
 packaging==24.1
     # via black
-pandas==2.0.3
+pandas==2.2.2
 parso==0.8.4
     # via jedi
 pathspec==0.12.1
     # via black
 pexpect==4.9.0
-    # via ipython
-pickleshare==0.7.5
     # via ipython
 platformdirs==4.2.2
     # via black
@@ -88,7 +84,6 @@ stack-data==0.6.3
 tokenize-rt==5.2.0
     # via black
 tomli==2.0.1
-    # via black
     # via databooks
     # via yapf
 traitlets==5.14.3
@@ -97,13 +92,9 @@ traitlets==5.14.3
 typer==0.12.3
     # via databooks
 typing-extensions==4.12.2
-    # via annotated-types
-    # via black
     # via databooks
-    # via ipython
     # via pydantic
     # via pydantic-core
-    # via rich
     # via typer
 tzdata==2024.1
     # via pandas
