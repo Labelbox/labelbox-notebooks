@@ -18,9 +18,8 @@ jobs:
         with:
           python-version: 3.12
       - name: Create readme
-        working-directory: examples
         run: rye run create-doc-readme
       - name: Run `custompages` command
         uses: readmeio/rdme@v8
         with:
-          rdme: custompages examples/tutorials.html --key=${{ secrets.README_API_KEY }}
+          rdme: custompages ./tutorials.html --key=${{ secrets.README_API_KEY }}
