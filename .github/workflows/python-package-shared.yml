@@ -1,0 +1,78 @@
+name: Labelbox Python SDK Shared
+
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        required: true
+        type: string
+      api-key:
+        required: true
+        type: string
+      da-test-key:
+        required: true
+        type: string
+      test-env:
+        required: true
+        type: string
+      fixture-profile: 
+        required: true
+        type: boolean
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: ./.github/actions/python-package-shared-setup
+        with:
+          rye-version: ${{ vars.RYE_VERSION }}
+          python-version: ${{ inputs.python-version }}
+      - name: Linting
+        working-directory: libs/labelbox
+        run: rye run lint
+  integration:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: labelbox-python-${{ inputs.test-env }}-${{ inputs.python-version }}-integration
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: ./.github/actions/python-package-shared-setup
+        with:
+          rye-version: ${{ vars.RYE_VERSION }}
+          python-version: ${{ inputs.python-version }}
+      - name: Integration Testing
+        env:
+          LABELBOX_TEST_API_KEY: ${{ secrets[inputs.api-key] }}
+          DA_GCP_LABELBOX_API_KEY: ${{ secrets[inputs.da-test-key] }}
+          LABELBOX_TEST_ENVIRON: ${{ inputs.test-env }}
+        working-directory: libs/labelbox
+        run: rye run integration -n 32
+  unit-data:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: labelbox-python-${{ inputs.test-env }}-${{ inputs.python-version }}-unit-data
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: ./.github/actions/python-package-shared-setup
+        with:
+          rye-version: ${{ vars.RYE_VERSION }}
+          python-version: ${{ inputs.python-version }}
+      - name: Unit && Data Testing
+        env:
+          LABELBOX_TEST_API_KEY: ${{ secrets[inputs.api-key] }}
+          DA_GCP_LABELBOX_API_KEY: ${{ secrets[inputs.da-test-key] }}
+          LABELBOX_TEST_ENVIRON: ${{ inputs.test-env }}
+        working-directory: libs/labelbox
+        run: |
+          rye sync -f --features labelbox/data
+          rye run unit -n 32
+          rye run data -n 32
