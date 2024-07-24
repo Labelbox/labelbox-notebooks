@@ -12,16 +12,9 @@ dependencies = []
 Homepage = "https://labelbox.com/"
 Documentation = "https://docs.labelbox.com/"
 Tutorials = "https://docs.labelbox.com/page/tutorials"
-Repository = "https://github.com/Labelbox/labelbox-python/examples"
-Issues = "https://github.com/Labelbox/labelbox-python/issues"
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["*"]
-namespaces = true
+Repository = "https://github.com/Labelbox/labelbox-notebooks"
 
 [tool.rye]
-managed = true
 virtual = true
 dev-dependencies = [
     "yapf>=0.40.2",
