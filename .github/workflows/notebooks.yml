@@ -2,9 +2,9 @@ name: Labelbox Example Notebook Workflow
 
 on:
   push:
-    branches: [develop]
+    branches: [main]
   pull_request:
-    branches: [develop]
+    branches: [main]
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
-      - uses: ./.github/actions/python-package-shared-setup
+      - uses: ./.github/actions
         with:
           python-version: 3.12
       - name: Format
@@ -60,7 +60,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
-      - uses: ./.github/actions/python-package-shared-setup
+      - uses: ./.github/actions
         with:
           python-version: 3.12
       - name: Create readme

@@ -19,7 +19,6 @@ runs:
       shell: bash
       run: rye pin ${{ inputs.python-version }}
     - name: Environment setup
-      working-directory: libs/labelbox
       shell: bash
       run: |
         rye sync -f --update-all
