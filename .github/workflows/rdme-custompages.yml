@@ -2,7 +2,7 @@ name: ReadMe GitHub Action 🦉
 
 on:
   pull_request:
-    branches: [develop]
+    branches: [main]
     types:
       - closed
     paths:
