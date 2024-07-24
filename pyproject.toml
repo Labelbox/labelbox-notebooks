@@ -15,6 +15,11 @@ Tutorials = "https://docs.labelbox.com/page/tutorials"
 Repository = "https://github.com/Labelbox/labelbox-python/examples"
 Issues = "https://github.com/Labelbox/labelbox-python/issues"
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+namespaces = true
+
 [tool.rye]
 managed = true
 virtual = true
