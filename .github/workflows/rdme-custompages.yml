@@ -1,16 +1,14 @@
 name: ReadMe GitHub Action 🦉
 
 on:
-  pull_request:
+  workflow_dispatch:
+  push:
     branches: [main]
-    types:
-      - closed
     paths:
       - README.md
 
 jobs:
   custompages:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
