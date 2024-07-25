@@ -1,10 +1,14 @@
-name: Labelbox Example Notebook Workflow
+name: Labelbox Notebook Workflow
 
 on:
   push:
     branches: [main]
+    paths:
+      - ./**/*.ipynb
   pull_request:
     branches: [main]
+    paths:
+      - ./**/*.ipynb
 
 permissions:
   contents: write
