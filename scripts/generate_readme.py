@@ -1,7 +1,8 @@
 import pandas
 import glob
 from collections import defaultdict
-from pprint import pprint
+from typing import Dict
+import copy
 
 """
 Script used to generate readme programmatically works by taking the links of all the notebooks
@@ -20,10 +21,21 @@ ORDER = [
     "prediction_upload",
 ]
 
+# Below lists represent a special order for certain sections
+BASICS_ORDER = [
+    "basics/quick_start.ipynb",
+    "basics/basics.ipynb",
+    "basics/data_rows.ipynb",
+    "basics/data_row_metadata.ipynb",
+    "basics/batches.ipynb",
+    "basics/projects.ipynb",
+    "basics/ontologies.ipynb",
+    "basics/user_management.ipynb",
+]
+
 SDK_EXAMPLE_HEADER = """
 # Labelbox SDK Examples\n
-- Learn how to use the SDK by following along\n
-- Run in google colab, view the notebooks on github, or clone the repo and run locally\n
+Welcome to Labelbox Notebooks! These documents are directly linked from our Labelbox Readme [Python tutorials](https://docs.labelbox.com/page/tutorials) page and we've set up this GitHub repository for content management. Once a PR is merged to main, the modified notebook is changed in Google colab which are linked throughout our documentation. For more information on the format of our notebooks visit our [CONTRIBUTING.md](./CONTRIBUTING.md).
 """
 
 README_EXAMPLE_HEADER = """---
@@ -32,8 +44,23 @@ title: Python tutorials
 
 """
 
-COLAB_TEMPLATE = "https://colab.research.google.com/github/Labelbox/labelbox-python/blob/develop/examples/{filename}"
-GITHUB_TEMPLATE = "https://github.com/Labelbox/labelbox-python/tree/develop/examples/{filename}"
+COLAB_TEMPLATE = "https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/{filename}"
+GITHUB_TEMPLATE = "https://github.com/Labelbox/labelbox-notebooks/tree/main/{filename}"
+
+def special_order(link_dict: Dict[str, list]) -> Dict:
+    """This is used to add a special order to certain sections. It makes a copy of the link dict provided then loops through items inside the link dict to create a specified order. (Not random) anything not found in the global variable for the section is just tacked on to the end.
+    """
+    modified_link_dict = copy.deepcopy(link_dict)
+    for section, links in link_dict.items():
+        
+        if section == "basics":
+            basic_order = BASICS_ORDER
+            for link_name in links:
+                if link_name not in BASICS_ORDER:
+                    basic_order.append(link_name)
+            modified_link_dict[section] = basic_order
+    
+    return modified_link_dict
 
 
 def create_header(link: str) -> str:
@@ -51,8 +78,8 @@ def create_header(link: str) -> str:
 
     # Capitalize first letter of each word
     for word in split_link:
-        header.append(word.capitalize())
-    return f"<h2>{' '.join(header)}</h2>"
+        header.append(word)
+    return f"<h2>{' '.join(header).capitalize()}</h2>"
 
 
 def create_title(link: str) -> str:
@@ -65,13 +92,13 @@ def create_title(link: str) -> str:
         str: formatted file path for notebook title
     """
     split_link = link.split(".")[-2].split("/")[-1].replace("_", " ").split(" ")
-    title = []
+    title: list[str] = []
 
     # List for lower casing certain words, keep certain acronyms capitalized and special mappings
     lower_case_words = ["to"]
     acronyms = ["html", "pdf", "llm", "dicom", "sam", "csv"]
     special = {"yolov8": "YOLOv8"}
-
+    first_word = True
     for word in split_link:
         if word.lower() in acronyms:
             title.append(word.upper())
@@ -80,8 +107,13 @@ def create_title(link: str) -> str:
         elif word in special.keys():
             title.append(special[word])
         else:
-            title.append(word.capitalize())
-    return " ".join(title).split(".")[0]
+            if first_word:
+                title.append(word.capitalize())
+            else:
+                title.append(word)
+        first_word = False
+    title = " ".join(title).split(".")[0]
+    return title
 
 
 def make_link(link: str, photo: str, link_type: str) -> str:
@@ -129,24 +161,25 @@ def make_table(base: str) -> str:
         str: markdown string file
     """
     link_dict = make_links_dict(glob.glob("**/*.ipynb", recursive=True))
+    link_dict = special_order(link_dict)
     generated_markdown = base
     for link_list in link_dict.values():
-        pandas_dict = {"Notebook": [], "Github": [], "Google Colab": []}
+        pandas_dict = {"Notebook": [], "Google colab": [], "Github": []}
         generated_markdown += f"{create_header(link_list[0])}\n\n"
         for link in link_list:
             pandas_dict["Notebook"].append(create_title(link))
+            pandas_dict["Google colab"].append(
+                make_link(
+                    COLAB_TEMPLATE.format(filename="/".join(link.split("/"))),
+                    "https://colab.research.google.com/assets/colab-badge.svg",
+                    "Colab",
+                )
+            )
             pandas_dict["Github"].append(
                 make_link(
                     GITHUB_TEMPLATE.format(filename="/".join(link.split("/"))),
                     "https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white",
                     "Github",
-                )
-            )
-            pandas_dict["Google Colab"].append(
-                make_link(
-                    COLAB_TEMPLATE.format(filename="/".join(link.split("/"))),
-                    "https://colab.research.google.com/assets/colab-badge.svg",
-                    "Colab",
                 )
             )
         df = pandas.DataFrame(pandas_dict)
