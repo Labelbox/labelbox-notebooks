@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - **.ipynb
+      - "**.ipynb"
   pull_request:
     branches: [main]
     paths:
-      - **.ipynb
+      - "**.ipynb"
 
 permissions:
   contents: write
