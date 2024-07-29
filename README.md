@@ -78,11 +78,6 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/exports/exporting_to_csv.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>Composite mask export</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/exports/composite_mask_export.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/exports/composite_mask_export.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
       <td>Export data</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/exports/export_data.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/exports/export_data.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
@@ -91,6 +86,11 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td>Export v1 to v2 migration support</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/exports/export_v1_to_v2_migration_support.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/exports/export_v1_to_v2_migration_support.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Composite mask export</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/exports/composite_mask_export.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/exports/composite_mask_export.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
   </tbody>
 </table>
@@ -112,6 +112,11 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/project_setup.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
+      <td>Queue management</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/queue_management.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/queue_management.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
       <td>Webhooks</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/webhooks.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/webhooks.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
@@ -120,11 +125,6 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td>Multimodal chat project</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/multimodal_chat_project.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/multimodal_chat_project.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Queue management</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/queue_management.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/queue_management.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
   </tbody>
 </table>
@@ -141,49 +141,14 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
   </thead>
   <tbody>
     <tr>
-      <td>Audio</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/audio.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/audio.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Video</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/video.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/video.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Text</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/text.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/text.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
       <td>Tiled</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/tiled.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/tiled.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>Conversational</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>PDF</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/pdf.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/pdf.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Conversational LLM data generation</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>DICOM</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Image</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/image.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/image.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+      <td>Conversational LLM</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational_LLM.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational_LLM.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>HTML</td>
@@ -191,9 +156,49 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/html.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>Conversational LLM</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational_LLM.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational_LLM.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+      <td>Conversational LLM data generation</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/image.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/image.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/pdf.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/pdf.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Prompt response</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/prompt_response.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/prompt_response.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>DICOM</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/text.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/text.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/audio.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/audio.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Conversational</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Video</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/video.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/video.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
   </tbody>
 </table>
@@ -210,14 +215,19 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
   </thead>
   <tbody>
     <tr>
-      <td>Meta SAM</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/sam/meta_sam.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/sam/meta_sam.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+      <td>Import YOLOv8 annotations</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/yolo/import_yolov8_annotations.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/yolo/import_yolov8_annotations.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>Meta SAM video</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/sam/meta_sam_video.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/sam/meta_sam_video.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Meta SAM</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/sam/meta_sam.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/sam/meta_sam.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>Langchain</td>
@@ -228,11 +238,6 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td>Huggingface custom embeddings</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/huggingface/huggingface_custom_embeddings.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/huggingface/huggingface_custom_embeddings.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Import YOLOv8 annotations</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/integrations/yolo/import_yolov8_annotations.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/integrations/yolo/import_yolov8_annotations.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
   </tbody>
 </table>
@@ -249,6 +254,11 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
   </thead>
   <tbody>
     <tr>
+      <td>Custom metrics demo</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/model_experiments/custom_metrics_demo.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/model_experiments/custom_metrics_demo.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
       <td>Model slices</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/model_experiments/model_slices.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/model_experiments/model_slices.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
@@ -257,11 +267,6 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td>Custom metrics basics</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/model_experiments/custom_metrics_basics.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/model_experiments/custom_metrics_basics.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Custom metrics demo</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/model_experiments/custom_metrics_demo.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/model_experiments/custom_metrics_demo.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>Model predictions to project</td>
@@ -283,6 +288,21 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
   </thead>
   <tbody>
     <tr>
+      <td>Video predictions</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/video_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/video_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>HTML predictions</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/html_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/html_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>Geospatial predictions</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/geospatial_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/geospatial_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
       <td>Conversational predictions</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/conversational_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/conversational_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
@@ -293,29 +313,14 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/text_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>HTML predictions</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/html_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/html_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
       <td>Conversational LLM predictions</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/conversational_LLM_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/conversational_LLM_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>Geospatial predictions</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/geospatial_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/geospatial_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
       <td>PDF predictions</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/pdf_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/pdf_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
-      <td>Video predictions</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/prediction_upload/video_predictions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/prediction_upload/video_predictions.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>Image predictions</td>

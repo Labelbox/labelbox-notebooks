@@ -45,21 +45,23 @@ title: Python tutorials
 """
 
 COLAB_TEMPLATE = "https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/{filename}"
-GITHUB_TEMPLATE = "https://github.com/Labelbox/labelbox-notebooks/tree/main/{filename}"
+GITHUB_TEMPLATE = (
+    "https://github.com/Labelbox/labelbox-notebooks/tree/main/{filename}"
+)
+
 
 def special_order(link_dict: Dict[str, list]) -> Dict:
-    """This is used to add a special order to certain sections. It makes a copy of the link dict provided then loops through items inside the link dict to create a specified order. (Not random) anything not found in the global variable for the section is just tacked on to the end.
-    """
+    """This is used to add a special order to certain sections. It makes a copy of the link dict provided then loops through items inside the link dict to create a specified order. (Not random) anything not found in the global variable for the section is just tacked on to the end."""
     modified_link_dict = copy.deepcopy(link_dict)
     for section, links in link_dict.items():
-        
+
         if section == "basics":
             basic_order = BASICS_ORDER
             for link_name in links:
                 if link_name not in BASICS_ORDER:
                     basic_order.append(link_name)
             modified_link_dict[section] = basic_order
-    
+
     return modified_link_dict
 
 
