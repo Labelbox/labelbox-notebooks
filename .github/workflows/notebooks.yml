@@ -53,7 +53,7 @@ jobs:
         with:
           filters: |
             addedOrModified:
-              - added|deleted: './**/*.ipynb'
+              - added|deleted: '**.ipynb'
   # Create readme if the above job shows true using rye run create-readme
   create:
     needs: changes
