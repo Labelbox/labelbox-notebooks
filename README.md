@@ -126,6 +126,11 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/multimodal_chat_project.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/multimodal_chat_project.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
+    <tr>
+      <td>Prompt response projects</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/project_configuration/prompt_response_projects.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/project_configuration/prompt_response_projects.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -156,11 +161,6 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/html.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
-      <td>Conversational LLM data generation</td>
-      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/conversational_LLM_data_generation.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
-    </tr>
-    <tr>
       <td>Image</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/image.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/image.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
@@ -179,6 +179,11 @@ Welcome to Labelbox Notebooks! These documents are directly linked from our Labe
       <td>DICOM</td>
       <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
       <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/dicom.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
+    </tr>
+    <tr>
+      <td>LLM data generation</td>
+      <td><a href="https://colab.research.google.com/github/Labelbox/labelbox-notebooks/blob/main/annotation_import/LLM_data_generation.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+      <td><a href="https://github.com/Labelbox/labelbox-notebooks/tree/main/annotation_import/LLM_data_generation.ipynb" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="Open In Github"></a></td>
     </tr>
     <tr>
       <td>Text</td>
