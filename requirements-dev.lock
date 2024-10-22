@@ -13,7 +13,7 @@ annotated-types==0.7.0
     # via pydantic
 asttokens==2.4.1
     # via stack-data
-black==24.8.0
+black==24.10.0
 click==8.1.7
     # via black
     # via typer
@@ -30,7 +30,7 @@ gitpython==3.1.43
     # via databooks
 importlib-metadata==8.5.0
     # via yapf
-ipython==8.27.0
+ipython==8.28.0
     # via black
 jedi==0.19.1
     # via ipython
@@ -38,29 +38,29 @@ matplotlib-inline==0.1.7
     # via ipython
 mypy-extensions==1.0.0
     # via black
-numpy==2.1.1
+numpy==2.1.2
     # via pandas
 packaging==24.1
     # via black
-pandas==2.2.2
+pandas==2.2.3
 parso==0.8.4
     # via jedi
 pathspec==0.12.1
     # via black
 pexpect==4.9.0
     # via ipython
-platformdirs==4.3.2
+platformdirs==4.3.6
     # via black
     # via yapf
-prompt-toolkit==3.0.47
+prompt-toolkit==3.0.48
     # via ipython
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
     # via stack-data
-pydantic==2.9.1
+pydantic==2.9.2
     # via databooks
-pydantic-core==2.23.3
+pydantic-core==2.23.4
     # via pydantic
 pygments==2.18.0
     # via ipython
@@ -81,9 +81,9 @@ smmap==5.0.1
     # via gitdb
 stack-data==0.6.3
     # via ipython
-tokenize-rt==6.0.0
+tokenize-rt==6.1.0
     # via black
-tomli==2.0.1
+tomli==2.0.2
     # via databooks
     # via yapf
 traitlets==5.14.3
@@ -96,10 +96,10 @@ typing-extensions==4.12.2
     # via pydantic
     # via pydantic-core
     # via typer
-tzdata==2024.1
+tzdata==2024.2
     # via pandas
 wcwidth==0.2.13
     # via prompt-toolkit
 yapf==0.40.2
-zipp==3.20.1
+zipp==3.20.2
     # via importlib-metadata
