@@ -14,7 +14,7 @@ annotated-types==0.7.0
 asttokens==3.0.0
     # via stack-data
 black==25.1.0
-click==8.1.8
+click==8.2.1
     # via black
     # via typer
 commonmark==0.9.1
@@ -28,7 +28,7 @@ gitdb==4.0.12
     # via gitpython
 gitpython==3.1.44
     # via databooks
-ipython==9.1.0
+ipython==9.3.0
     # via black
 ipython-pygments-lexers==1.1.1
     # via ipython
@@ -36,31 +36,31 @@ jedi==0.19.2
     # via ipython
 matplotlib-inline==0.1.7
     # via ipython
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
     # via black
-numpy==2.2.4
+numpy==2.3.0
     # via pandas
-packaging==24.2
+packaging==25.0
     # via black
-pandas==2.2.3
+pandas==2.3.0
 parso==0.8.4
     # via jedi
 pathspec==0.12.1
     # via black
 pexpect==4.9.0
     # via ipython
-platformdirs==4.3.7
+platformdirs==4.3.8
     # via black
     # via yapf
-prompt-toolkit==3.0.50
+prompt-toolkit==3.0.51
     # via ipython
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
     # via stack-data
-pydantic==2.11.3
+pydantic==2.11.7
     # via databooks
-pydantic-core==2.33.1
+pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.1
     # via ipython
@@ -81,22 +81,22 @@ smmap==5.0.2
     # via gitdb
 stack-data==0.6.3
     # via ipython
-tokenize-rt==6.1.0
+tokenize-rt==6.2.0
     # via black
 tomli==2.2.1
     # via databooks
 traitlets==5.14.3
     # via ipython
     # via matplotlib-inline
-typer==0.15.2
+typer==0.16.0
     # via databooks
-typing-extensions==4.13.2
+typing-extensions==4.14.0
     # via databooks
     # via pydantic
     # via pydantic-core
     # via typer
     # via typing-inspection
-typing-inspection==0.4.0
+typing-inspection==0.4.1
     # via pydantic
 tzdata==2025.2
     # via pandas
